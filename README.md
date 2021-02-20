@@ -57,16 +57,16 @@ The Remote GeoSystems, Inc’s geoDVR Ethernet Camera Target Location and Footpr
 ***IMPORTANT NOTE:*** The variables outlined in the Ethernet Camera Target Location and Footprint Protocol can also be captured and displayed in LineVision via the MISB STANAG protocol.  LineVision can handle both the MISB protocol and the protocol outlined in this document.  However, the purposed of this specification is to provide an alternate, greatly simplified protocol as compared to MISB that provides the minimum required variables for showing both the target location and camera footprint on the map.  *The coordinate system and order of operations used in the protocol outlined in this document parallels the ones used in the MISB specification.* 
 
 
-1. **geoDVR Module Requirements**
+2. **geoDVR Module Requirements**
 
 The following geoDVR modules are required for the protocol to collect and display the required data:
 
 
 
 1. Live Moving Maps module
-1. Camera Target Footprint module *(Note: This has also previously been referred to in some documents as the Advanced Gimbal Targeting & 4-Corner MISB FMV module)*  
+2. Camera Target Footprint module *(Note: This has also previously been referred to in some documents as the Advanced Gimbal Targeting & 4-Corner MISB FMV module)*  
 
-1. **Hardware & Software Requirements**
+3. **Hardware & Software Requirements**
 
 To implement the Ethernet Camera Target Location and Footprint Protocol outlined in this document, the device sending the data to the geoDVR must have an Ethernet port available that can send TCP data over a specified port.  By default, the geoDVR expects the data to be sent over port 1121.  This port can be changed via a configuration setting in the geoDVR, although it is recommended that the default port be used.  The device sending the information must have any firewalls, etc. configured to allow two-way communication over the default port.  The device sending the information must also have a static IP address that can be entered into the geoDVR.  It is recommended that the sending device be on the 192.168.0.1 subnet with a static IP address of 192.168.0.20.  The geoDVR automatically “listens” to this port/IP/subnet configuration although the configuration can be changed via a configuration setting in the geoDVR.
 
@@ -79,7 +79,7 @@ Recommendations for devices implementing and sending protocol data:
 - Recommended Subnet: 192.168.0.1
 - Ethernet Protocol: TCP/IP
 
-1. **Protocol Specification**
+4. **Protocol Specification**
 
 The data being sent via the protocol should be sent in constant intervals up to a maximum of 5 Hz.  Higher data frequencies are allowed although they have not been tested.  In general, the recommended frequency is 1 Hz.  The minimum recommended frequency is also 1 Hz.
 
@@ -131,7 +131,7 @@ The data being sent should be XML “packets” resembling the following:
 
 </trkpt>
 
-1. **Variable Definitions**
+5. **Variable Definitions**
 
 
 |**Variable**|**Description**|**Units**|
@@ -165,7 +165,7 @@ The data being sent should be XML “packets” resembling the following:
 **Figure 1**
 
 
-1. **Minimum Required Variables**
+6. **Minimum Required Variables**
 
 If frame center (sensor target location) calculations are present, the minimum variables required are the following:
 
@@ -202,7 +202,7 @@ To configure the geoDVR to receive GPS data from your gimbal/device, navigate to
 ![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.005.png)
 
 
-7. **Camera Control**
+8. **Camera Control**
 
 The geoDVR can be used to control your gimbal.  If enabled, they the map is touched (clicked), the location touched is sent over a network connection.  The data packet containing the location coordinates where the map was “touched” takes on the form:
 
@@ -243,7 +243,7 @@ When touched (clicked), the text should change to “Disable Camera Positioning 
 
 When selected, each time you touch the map, it will send a data point on that exact spot.
 
-7. **Protocol Test Application, Example Source Code**
+9. **Protocol Test Application, Example Source Code**
 
 To assist with sending GPS to the geoDVR and to test Camera Control connection, source code has been placed on the Remote GeoSystems GitHub account.  A test application can be downloaded from:
 
@@ -255,7 +255,7 @@ The source code for the application can be downloaded from the same repository a
 
 To run the source code, Visual Studio 2019 is recommended.  The source code is provided in C#.
 
-7. **Questions and Additional Support**
+10. **Questions and Additional Support**
 
 For questions or additional support, please contact the support email address listed above or visit the Remote GeoSystems, Inc. website at [www.remotegeo.com](http://www.remotegeo.com) or visit the Remote Geo Product Support forums at <https://support.remotegeo.com/forums/>.  
 
