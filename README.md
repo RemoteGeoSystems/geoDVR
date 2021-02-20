@@ -52,7 +52,7 @@ Revision History
 
 The Remote GeoSystems, Inc’s geoDVR Ethernet Camera Target Location and Footprint Protocol defines the connectivity and data format requirements in order for the Remote Geo geoDVR to collect the required variables for displaying the camera target location and the camera footprint on the map when being used in the Remote Geo LineVision software suite.  Additionally, the protocol also allows the geoDVR Live Moving Maps module to display the camera target location along with the platform’s (aircraft, vehicle, etc) location.  Once collected and imported into LineVision, the data is presented in a format similar to the following:
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.002.png)
+![](https://i.ibb.co/0KdPSPk/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-002.png)
 
 ***IMPORTANT NOTE:*** The variables outlined in the Ethernet Camera Target Location and Footprint Protocol can also be captured and displayed in LineVision via the MISB STANAG protocol.  LineVision can handle both the MISB protocol and the protocol outlined in this document.  However, the purposed of this specification is to provide an alternate, greatly simplified protocol as compared to MISB that provides the minimum required variables for showing both the target location and camera footprint on the map.  *The coordinate system and order of operations used in the protocol outlined in this document parallels the ones used in the MISB specification.* 
 
@@ -160,7 +160,7 @@ The data being sent should be XML “packets” resembling the following:
 
 ***IMPORTANT: The angles and variables mentioned above MUST follow the coordinate system defined in the MISB specification.  Please refer to Figure 1 below.***
 
-![https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/MISB\_ST\_0601.8\_-\_Yaw%2C\_Pitch\_%26\_Roll.png/800px-MISB\_ST\_0601.8\_-\_Yaw%2C\_Pitch\_%26\_Roll.png](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.003.png)![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.004.png)
+![picture3](https://i.ibb.co/cL7h2D1/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-003.png)![](https://i.ibb.co/52Cw1hF/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-004.png)
 
 **Figure 1**
 
@@ -199,7 +199,7 @@ Provided the frame center calculations are present, at a minimum the horizontal 
 
 To configure the geoDVR to receive GPS data from your gimbal/device, navigate to the File Menu and select “Options->Use Remote Geo Ethernet GPS” from the drop-down menu. This setting configures the geoDVR to listen for incoming connections (it behaves like a server) and the "ANY" address resolves to 0.0.0.0 which allows connections from any client.
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.005.png)
+![](https://i.ibb.co/RCjY4q0/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-005.png)
 
 
 8. **Camera Control**
@@ -222,15 +222,17 @@ To receive the coordinates, two methods are available.  The first option is by u
 
 The second option is by listening to a UDP Connection that is broadcast from the geoDVR.  The UDP packets also take on the same format as above and are configured when “Moving Maps->Enable Camera Control” is selected from the main menu (IMPORTANT: “Enable Camera Control” must be selected for camera control coordinates to be sent):
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.006.png)
+![](https://i.ibb.co/XL4gpfm/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-006.png)
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.007.png)
+![](https://i.ibb.co/hWzJ7kz/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-007.png
+)
 
 In this case, the IP Address specified must be the IP address of the gimbal/computer where the camera control coordinates are being sent.
 
 Once the above are configured, a button towards the top of the map labeled “Enable Camera Positioning on Click” should appear.
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.008.png)
+![](https://i.ibb.co/zP2Rfzj/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-008.png
+)
 
 
 When selected, camera control coordinates will be sent over both the TCP and UDP connections.  IMPORTANT: Only one connection, either TCP or UDP, is required for gimbal control.  The two different options are offered to give more flexibility in programming options.
@@ -239,7 +241,7 @@ When touched (clicked), the text should change to “Disable Camera Positioning 
 
 
 
-![](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.009.png) 
+![](https://i.ibb.co/C8L26vV/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-009.png) 
 
 When selected, each time you touch the map, it will send a data point on that exact spot.
 
