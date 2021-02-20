@@ -1,5 +1,5 @@
 # geoDVR
-|![RGS\_LogoColorTextBelow\_Crop](Aspose.Words.7da5ab13-f2ce-4e5f-8129-7a108bc82883.001.jpeg)|<p>**geoDVR Ethernet Camera Target Location and Footprint Protocol** </p><p></p><p>*Last Updated: 2-19-21*</p>|<p>**Contact Information:**</p><p>3307 South College Avenue  </p><p>Suite 211</p><p>Fort Collins, CO 80525	</p>|
+|![RGS\_LogoColorTextBelow\_Crop](https://ibb.co/KhgrtMY)|<p>**geoDVR Ethernet Camera Target Location and Footprint Protocol** </p><p></p><p>*Last Updated: 2-19-21*</p>|<p>**Contact Information:**</p><p>3307 South College Avenue  </p><p>Suite 211</p><p>Fort Collins, CO 80525	</p>|
 | :- | :-: | :- |
 
 
