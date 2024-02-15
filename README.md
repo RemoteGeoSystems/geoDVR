@@ -17,7 +17,7 @@ Phone: +1 844-436-3877
 
 Copyright and Use Agreement
 
-© Copyright 2011-2021, Remote GeoSystems, Inc. All Rights reserved. The Remote GeoSystems name and
+© Copyright 2011-2024, Remote GeoSystems, Inc. All Rights reserved. The Remote GeoSystems name and
 
 logo and all related product and service names, including, but not limited to, geoDVR, LineVision, and geoProject and design marks and slogans are the trademarks, and service marks of Remote GeoSystems, Inc.
 
@@ -56,16 +56,12 @@ Additionally, the geoDVR Ethernet Camera Target Footprint and Gimbal Control Pro
 
 When set up with the geoDVR Live Moving Maps Module, the data is presented in format similar to the following:
 
-![](https://i.ibb.co/0KdPSPk/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-002.png)
-
-
-
-
-
+![](https://i.ibb.co/KNvYqNf/new.jpg)
 
 Once collected and imported into LineVision, the data is presented in a format similar to the following:
 
-![](https://i.ibb.co/KNvYqNf/new.jpg)
+![](https://i.ibb.co/0KdPSPk/Aspose-Words-7da5ab13-f2ce-4e5f-8129-7a108bc82883-002.png) 
+
 
 ***NOTE:***  The camera metadata variables outlined in the geoDVR Ethernet Camera Target Footprint and Gimbal Control protocol parallels those found in the MISB FMV / STANAG-spec video protocol.  
 
